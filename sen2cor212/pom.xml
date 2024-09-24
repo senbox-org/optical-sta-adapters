@@ -9,14 +9,21 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>maja-adapter</artifactId>
+    <artifactId>sen2cor212</artifactId>
     <packaging>nbm</packaging>
 
-    <name>Maja</name>
-    <description>Maja - OTB application</description>
+    <name>Sentinel-2 SEN2COR processor v02.12.03</name>
+    <description>Performs atmospheric correction on Sentinel 2 L1C products, thereby creating L2A products using Sen2Cor v02.12.03</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>eu.esa.snap.netbeans</groupId>
+            <artifactId>snap-help-system</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
-        <sourceDirectory>../src/main/java</sourceDirectory>
+        <sourceDirectory>src/main/java</sourceDirectory>
         <resources>
             <resource>
                 <directory>resources</directory>
