@@ -23,9 +23,9 @@
     <osvariable>
       <key>OTB_BIN_DIR</key>
       <value/>
-      <windows>$HOME/.snap/auxdata/OTB-6.6.1-win64</windows>
-      <linux>$HOME/.snap/auxdata/OTB-6.6.1-Linux64</linux>
-      <macosx>$HOME/.snap/auxdata/OTB-6.6.1-Darwin64</macosx>
+      <windows>$HOME/.snap/auxdata/OTB-8.1.2-win64</windows>
+      <linux>$HOME/.snap/auxdata/OTB-8.1.2-Linux64</linux>
+      <macosx>$HOME/.snap/auxdata/OTB-8.1.2-Darwin64</macosx>
       <isTransient>true</isTransient>
       <isShared>false</isShared>
     </osvariable>
@@ -148,20 +148,20 @@
   <windowsBundle>
     <bundleType>ZIP</bundleType>
     <bundleLocation>REMOTE</bundleLocation>
-    <downloadURL>https://www.orfeo-toolbox.org/packages/OTB-6.6.1-Win64.zip</downloadURL>
+    <downloadURL>https://www.orfeo-toolbox.org/packages/archives/OTB/OTB-8.1.2-Win64.zip</downloadURL>
     <templateparameter>
       <template type="simple">
         <contents></contents>
       </template>
     </templateparameter>
-    <targetLocation>$USERPROFILE/.snap/auxdata</targetLocation>
-    <entryPoint>OTB-6.6.1-Win64.zip</entryPoint>
+    <targetLocation>$USERPROFILE/.snap/auxdata/</targetLocation>
+    <entryPoint>OTB-8.1.2-Win64.zip</entryPoint>
     <updateVariable>OTB_BIN_DIR</updateVariable>
   </windowsBundle>
   <linuxBundle>
-    <bundleType>INSTALLER</bundleType>
+    <bundleType>ZIP</bundleType>
     <bundleLocation>REMOTE</bundleLocation>
-    <downloadURL>https://www.orfeo-toolbox.org/packages/OTB-6.6.1-Linux64.run</downloadURL>
+    <downloadURL>https://www.orfeo-toolbox.org/packages/archives/OTB/OTB-8.1.2-Linux.tar.gz</downloadURL>
     <templateparameter>
       <name>arguments</name>
       <dataType>java.io.File</dataType>
@@ -185,18 +185,18 @@
       <template type="simple">
         <contents>--nox11
           --target
-          $targetLocation/OTB-6.6.1-Linux64</contents>
+          $targetLocation/OTB-8.1.2-Linux64</contents>
       </template>
       <outputFile>Command Template</outputFile>
     </templateparameter>
-    <targetLocation>$USERPROFILE/.snap/auxdata</targetLocation>
-    <entryPoint>OTB-6.6.1-Linux64.run</entryPoint>
+    <targetLocation>$USERPROFILE/.snap/auxdata/</targetLocation>
+    <entryPoint>OTB-8.1.2-Linux.tar.gz</entryPoint>
     <updateVariable>OTB_BIN_DIR</updateVariable>
   </linuxBundle>
   <macosxBundle>
-    <bundleType>INSTALLER</bundleType>
+    <bundleType>ZIP</bundleType>
     <bundleLocation>REMOTE</bundleLocation>
-    <downloadURL>https://www.orfeo-toolbox.org/packages/OTB-6.6.1-Darwin64.run</downloadURL>
+    <downloadURL>https://www.orfeo-toolbox.org/packages/archives/OTB/OTB-8.1.2-Darwin64.run</downloadURL>
     <templateparameter>
       <name>arguments</name>
       <dataType>java.io.File</dataType>
@@ -220,12 +220,12 @@
       <template type="simple">
         <contents>--nox11
           --target
-          $targetLocation/OTB-6.6.1-Darwin64</contents>
+          $targetLocation/OTB-8.1.2-Darwin64</contents>
       </template>
       <outputFile>Command Template</outputFile>
     </templateparameter>
     <targetLocation>$USER_HOME/.snap/auxdata</targetLocation>
-    <entryPoint>OTB-6.6.1-Darwin64.run</entryPoint>
+    <entryPoint>OTB-8.1.2-Darwin64.run</entryPoint>
     <updateVariable>OTB_BIN_DIR</updateVariable>
   </macosxBundle>
   <sourceProductDescriptors>

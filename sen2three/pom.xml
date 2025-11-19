@@ -5,7 +5,7 @@
     <parent>
         <artifactId>optical-sta-adapters</artifactId>
         <groupId>eu.esa.opt</groupId>
-        <version>10.0.0</version>
+        <version>13.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -40,8 +40,8 @@
                 <groupId>org.apache.netbeans.utilities</groupId>
                 <artifactId>nbm-maven-plugin</artifactId>
                 <configuration combine.self="override">
-                    <licenseFile>${project.basedir}/../../LICENSE.html</licenseFile>
-                    <keystore>${project.basedir}/../../keystore/s2tbx.ks</keystore>
+                    <licenseFile>${project.basedir}/../../../LICENSE.html</licenseFile>
+                    <keystore>${project.basedir}/../../optical-toolbox/keystore/optical.ks</keystore>
                     <keystorealias>snap</keystorealias>
                     <keystorepassword>snap-123</keystorepassword>
                 </configuration>

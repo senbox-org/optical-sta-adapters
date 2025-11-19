@@ -4,3 +4,7 @@ $sourceProductFile[0]
 $sourceProductFile[1]
 -out
 $targetProductFile
+-method.rcs.radiusx
+$radiusx_int
+-method.rcs.radiusy
+$radiusy_int

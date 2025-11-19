@@ -5,10 +5,10 @@
     <parent>
         <artifactId>optical-sta-adapters-otb</artifactId>
         <groupId>eu.esa.opt</groupId>
-        <version>10.0.0</version>
+        <version>13.0.0</version>
     </parent>
 
-    <artifactId>opttbx-otb-adapters-kit</artifactId>
+    <artifactId>opticaltbx-otb-adapters-kit</artifactId>
     <packaging>nbm</packaging>
 
     <name>Optical Toolbox OTB Adapters Module</name>

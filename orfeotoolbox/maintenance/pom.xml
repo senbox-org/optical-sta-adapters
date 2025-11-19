@@ -5,7 +5,7 @@
     <parent>
         <artifactId>optical-sta-adapters-otb</artifactId>
         <groupId>eu.esa.opt</groupId>
-        <version>10.0.0</version>
+        <version>13.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -49,7 +49,7 @@
                 <artifactId>maven-antrun-plugin</artifactId>
                 <configuration>
                     <tasks>
-                        <copy file="target/nbm/${project.artifactId}-${opttbx.version}.nbm" tofile="../target/nbm/${project.artifactId}-${opttbx.version}.nbm"/>
+                        <copy file="target/nbm/${project.artifactId}-${project.version}.nbm" tofile="../target/nbm/${project.artifactId}-${project.version}.nbm"/>
                     </tasks>
                 </configuration>
                 <executions>
