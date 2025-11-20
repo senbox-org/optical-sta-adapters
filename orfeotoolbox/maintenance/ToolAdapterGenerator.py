@@ -376,7 +376,7 @@ def manageToolParameters(dicInfo):
                 "optional": "./optional/text()"
     }
 
-    #dictionnary to convert processing type into s2tbx type
+    #dictionnary to convert processing type into optical toolbox type
     typeConversion = {'ParameterType_Float': ['java.lang.Float', 'float'],
                       'ParameterType_Int': ['java.lang.Integer', 'int'],
                       'ParameterType_String': ['java.lang.String', 'string'],
@@ -394,7 +394,7 @@ def manageToolParameters(dicInfo):
     inputParameterIndex = 0
     inputParameterNames = []
 
-    # go throught all parameters, get information to create S2TBX xml
+    # go throught all parameters, get information to create Optical Toolbox xml
     for param in toolsProcessingParameters:
 
         key = param.xpath("./key/text()")[0]
@@ -686,10 +686,10 @@ OpenIDE-Module-Specification-Version: {version}
 OpenIDE-Module-Implementation-Version: {version}
 OpenIDE-Module-Name: {appKeySplitted}
 OpenIDE-Module-Display-Category: SNAP Supported Plugins
-OpenIDE-Module-Java-Dependencies: Java > 1.8
+OpenIDE-Module-Java-Dependencies: Java > 21
 OpenIDE-Module-Type: STA
 OpenIDE-Module-Short-Description: {longName}
-OpenIDE-Module: org.esa.s2tbx.{appKeySplitted}
+OpenIDE-Module: eu.esa.opt.{appKeySplitted}
 OpenIDE-Module-Alias: {appKey}
 OpenIDE-Module-Module-Dependencies: org.esa.snap.snap.sta, org.esa.snap.snap.sta.ui
 AutoUpdate-Show-In-Client: false
@@ -724,7 +724,7 @@ def run_ToolAdapterGenerator(outputDir, xmlDescriptionProcessing, createAdapter=
 if __name__ == '__main__':
     outputDirectory = os.path.join(os.path.dirname(__file__), '..')
     
-    dirlist = [folder for folder in os.listdir(outputDirectory) if os.path.isdir(os.path.join(outputDirectory, folder)) and folder not in ["maintenance", "s2tbx-otb-adapters-kit", ".sonar", "target"]]
+    dirlist = [folder for folder in os.listdir(outputDirectory) if os.path.isdir(os.path.join(outputDirectory, folder)) and folder not in ["maintenance", "opticaltbx-otb-adapters-kit", ".sonar", "target"]]
     print dirlist
     for existingAdapter in dirlist:
         print os.path.abspath(os.path.join(outputDirectory, existingAdapter))

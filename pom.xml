@@ -6,7 +6,7 @@
 
     <groupId>eu.esa.opt</groupId>
     <artifactId>optical-sta-adapters</artifactId>
-    <version>10.0.0</version>
+    <version>13.0.0</version>
 
     <name>Optical Toolbox Adapters</name>
     <description>Adapters for the Standalone Tools in the Optical Toolbox</description>
@@ -35,8 +35,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <snap.version>10.0.0</snap.version>
-        <opttbx.version>10.0.3</opttbx.version>
+        <snap.version>13.0.0</snap.version>
+        <opttbx.version>13.0.0</opttbx.version>
         <snap-help-system.version>1.0.0</snap-help-system.version>
         <javahelp.version>2.0.05</javahelp.version>
         <brandingToken>opticalStaAdapters</brandingToken>
@@ -126,7 +126,7 @@
                     <cluster>${brandingToken}</cluster>
                     <useOSGiDependencies>false</useOSGiDependencies>
                     <requiresRestart>false</requiresRestart>
-                    <keystore>${project.basedir}/../../keystore/s2tbx.ks</keystore>
+                    <keystore>${project.basedir}/../../../optical-toolbox/keystore/optical.ks</keystore>
                     <keystorealias>snap</keystorealias>
                     <keystorepassword>snap-123</keystorepassword>
                     <sourceManifestFile>target/nbm/manifest.mf</sourceManifestFile>
